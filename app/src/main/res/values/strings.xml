@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">GameTetris</string>
+    <string name="title_activity_home">TeTRiS</string>
+    <string name="dummy_content">TETRIS</string>
+    <string name="points_label">Points:</string>
+    <string name="part_label">Next</string>
+    <string name="new_game_label">New game</string>
+    <string name="resume_label">Resume</string>
+    <string name="config_label">Settings</string>
+    <string name="game_name">Tetris</string>
+    <string name="settings_title">Settings</string>
+    <string name="game_mode">Difficulty</string>
+    <string name="part_number_label">Part number</string>
+    <string name="new_record">New record:</string>
+    <string name="exit_label">Exit</string>
+    <string name="game_over">Game Over!</string>
+    <string name="record_label">Record:</string>
+    <string name="points_text">Points:</string>
+</resources>
