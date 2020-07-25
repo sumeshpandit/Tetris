@@ -8,7 +8,6 @@
     android:background="#0e1828"
     android:padding="18pt"
     >
-
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
