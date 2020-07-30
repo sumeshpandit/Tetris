@@ -14,7 +14,7 @@ class SettingsActivity : AppCompatActivity() {
         setContentView(R.layout.activity_settings)
 
         val settings = getSharedPreferences(PREFS, Context.MODE_PRIVATE)
-        val speed = settings.getLong("speed", 200L)
+        val speed = settings.getLong("speed", 300L)
 
         if (speed == 100L)
             rdGameMode.check(d3.id)

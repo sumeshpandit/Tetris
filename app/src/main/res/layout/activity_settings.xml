@@ -41,37 +41,40 @@
         <RadioGroup
             android:id="@+id/rdGameMode"
             android:layout_width="match_parent"
-            android:layout_height="114dp">
+            android:layout_height="180dp">
 
             <RadioButton
                 android:id="@+id/d1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:checked="true"
                 android:text="Easy"
                 android:textSize="50sp"
-                android:textColor="#babaca"
+                android:textColor="#18FFFF"
                 android:textStyle="bold" />
 
             <RadioButton
                 android:id="@+id/d2"
                 android:layout_width="match_parent"
                 android:layout_height="51dp"
-                android:checked="true"
                 android:text="Medium"
-                android:textColor="#babaca"
+                android:textColor="#40C4FF"
                 android:textSize="40sp"
+                android:textStyle="bold" />
+
+            <RadioButton
+                android:id="@+id/d3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Hard"
+                android:layout_gravity="bottom"
+                android:textColor="#448AFF"
+                android:textSize="30sp"
                 android:textStyle="bold" />
 
         </RadioGroup>
 
-        <RadioButton
-            android:id="@+id/d3"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Hard"
-            android:textColor="#babaca"
-            android:textSize="30sp"
-            android:textStyle="bold" />
+
 
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
