@@ -1,7 +1,5 @@
 package com.sumesh_pandit.tetris
 
-import android.widget.ImageView
-
 class GameState {
     companion object {
         var saved = false

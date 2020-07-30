@@ -16,7 +16,7 @@ class GameOverActivity : AppCompatActivity() {
         setContentView(R.layout.activity_game_over)
 
         val settings = getSharedPreferences(PREFS, Context.MODE_PRIVATE)
-        var params = intent.extras
+        val params = intent.extras
         val record = settings.getInt("record", 0)
         val points = params?.getInt("points")
 

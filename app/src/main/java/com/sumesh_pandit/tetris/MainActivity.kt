@@ -12,7 +12,6 @@ import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProviders
 import kotlin.random.Random
 
-
 class MainActivity : AppCompatActivity() {
 
     val PREFS = "game_settings"
@@ -21,7 +20,7 @@ class MainActivity : AppCompatActivity() {
 
     var gameOver = false
     var running = true
-    var speed: Long = 200
+    var speed: Long = 300
     var points = 0
     var partId = Random.nextInt(0, 7)
     var part: Part = getRadomPart(partId, 0, COL / 2)
@@ -51,7 +50,7 @@ class MainActivity : AppCompatActivity() {
         gridboardNextPart.rowCount = 2
         gridboardNextPart.columnCount = 4
 
-        var bundle: Bundle? = intent.extras
+        val bundle: Bundle? = intent.extras
 
         if (bundle != null && GameState.saved) {
             vm.board = GameState.board
@@ -72,7 +71,7 @@ class MainActivity : AppCompatActivity() {
         }
 
         btnRigth.setOnClickListener {
-            if (checkColisionRigth())
+            if (checkColisionRight())
                 part.moveRight()
         }
 
@@ -84,14 +83,14 @@ class MainActivity : AppCompatActivity() {
         btnRotate.setOnClickListener {
 
             if (checkColisionX()) {
-                if (!checkColisionRigth()) {
+                if (!checkColisionRight()) {
                     if (checkColisionLeft()) {
                         part.moveLeft()
                         part.rotate()
                     }
                 }
                 else if (!checkColisionLeft()) {
-                    if (checkColisionRigth()) {
+                    if (checkColisionRight()) {
                         part.moveRight()
                         part.rotate()
                     }
@@ -177,7 +176,7 @@ class MainActivity : AppCompatActivity() {
                 (part.pointD.x + 1 < ROW && vm.board[part.pointD.x + 1][part.pointD.y] < 1))
     }
 
-    fun checkColisionRigth(): Boolean {
+    fun checkColisionRight(): Boolean {
         return ((part.pointA.y + 1 < COL && vm.board[part.pointA.x][part.pointA.y + 1] < 1) &&
                 (part.pointB.y + 1 < COL && vm.board[part.pointB.x][part.pointB.y + 1] < 1) &&
                 (part.pointC.y + 1 < COL && vm.board[part.pointC.x][part.pointC.y + 1] < 1) &&
