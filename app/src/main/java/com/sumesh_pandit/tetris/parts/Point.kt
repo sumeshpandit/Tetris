@@ -12,8 +12,4 @@ class Point(var x:Int,var y:Int){
     fun moveRight(){
         y++
     }
-
-    fun moveTop(){
-        x--
-    }
 }
