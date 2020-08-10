@@ -269,16 +269,6 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
-    fun printTest() {
-        for (j in 1 until COL) {
-            vm.board[ROW - 1][j] = 1
-            vm.board[ROW - 2][j] = 1
-            vm.board[ROW - 3][j] = 1
-            vm.board[ROW - 4][j] = 1
-            vm.board[ROW - 5][j] = 1
-        }
-    }
-
     fun gameRun() {
 
         clearScreen(boardViewNextPart, 2, 4)
