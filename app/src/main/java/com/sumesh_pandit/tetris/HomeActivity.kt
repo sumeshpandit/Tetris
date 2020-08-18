@@ -9,10 +9,6 @@ import android.view.View
 
 import kotlinx.android.synthetic.main.activity_home.*
 
-/**
- * An example full-screen activity that shows and hides the system UI (i.e.
- * status bar and navigation/system bar) with user interaction.
- */
 class HomeActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -41,5 +37,4 @@ class HomeActivity : AppCompatActivity() {
             continueGame.visibility = View.VISIBLE
         }
     }
-
 }
